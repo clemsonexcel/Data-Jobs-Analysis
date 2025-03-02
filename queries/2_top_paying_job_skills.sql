@@ -13,8 +13,8 @@ with top_paying_job as (
         job_title,
         salary_year_avg,
         name as company_name 
-    from job_postings_fact as jp
-    left join company_dim as cd on jp.company_id = cd.company_id
+    from job_postings_fact
+    left join company_dim  on job_postings_fact.company_id = company_dim.company_id
     where 
         job_title_short = 'Data Analyst' and 
         salary_year_avg is not null and 
