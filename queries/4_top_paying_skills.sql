@@ -7,18 +7,18 @@ Question: What are the top skills based on salary?
     helps identify the most financially rewarding skills to acquire or improve
 */
 
-select 
+SELECT
     skills,
     round(avg(salary_year_avg)) as avg_salary
-from job_postings_fact
-inner join skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id
-inner join skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
-where job_title_short = 'Data Analyst' and 
-    salary_year_avg is not null and 
+FROM job_postings_fact
+INNER JOIN skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id
+INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
+WHERE job_title_short = 'Data Analyst' AND
+    salary_year_avg IS NOT NULL AND 
     job_work_from_home = True
-group by Skills
-order by avg_salary desc
-limit 30;
+GROUP BY Skills
+ORDER BY avg_salary DESC
+LIMIT 30;
 
 /*
 Here's a breakdown of the results for top paying skills for Data Analysts:
