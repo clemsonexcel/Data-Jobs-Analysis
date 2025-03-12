@@ -234,7 +234,10 @@ From the analysis, several general insights were:
 
 This project provided valuable insights into the job market for data analysts, highlighting the highest-paying roles, required skills, and industry trends. By leveraging SQL and visualization tools, I was able to extract meaningful information that can guide job seekers in targeting the right opportunities and skill development.  
 
-Beyond the analysis, this project also reinforced my ability to work with large datasets, write efficient SQL queries, and translate raw data into actionable insights. As the data job market evolves, staying updated on industry trends and continuously refining technical skills will be key to career growth.  
+Beyond the analysis, this project also reinforced my ability to work with large datasets, write efficient SQL queries, and translate raw data into actionable insights. As the data job market evolves, staying updated on industry trends and continuously refining technical skills will be key to career growth.
+
+## Acknowledgment
+This project was inspired by Luke Barousse's tutorial on YouTube. You can check out their original video [here](https://youtu.be/7mz73uXD9DA?si=FUBtkL3tQIwBUze)
 
 
 
